@@ -1,15 +1,16 @@
 CREATE TABLE Marksheet (
+    StudentID INT,
     Name VARCHAR(50),
     Marks INT
 );
 
-INSERT INTO Marksheet (Name, Marks)
+INSERT INTO Marksheet (StudentID, Name, Marks)
 VALUES
-('Arun', 85),
-('Divya', 75),
-('Karthik', 95),
-('Rahul', 90),
-('Priya', 70);
+(1001, 'Arun', 85),
+(1002, 'Divya', 75),
+(1003, 'Karthik', 95),
+(1004, 'Rahul', 90),
+(1005, 'Priya', 70);
 
 SELECT Name, Marks
 FROM Marksheet
